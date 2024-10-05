@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.bg-hero {
+		@apply bg-[url('./assets/images/Background.png')] bg-repeat-round;
+	}
+	.bg-hero-texture {
+		@apply bg-[url('./assets/images/Texture.png')] bg-cover bg-center h-full w-full;
+	}
+
+	.type-button {
+		@apply text-white rounded-md py-1 px-5 md:px-3 xl:px-5 capitalize text-sm;
+	}
+
+	.bg-side {
+		@apply w-0 md:w-14 lg:w-20 xl:w-24 2xl:w-32 h-auto bg-[url('./assets/images/side-bg.png')] bg-cover bg-center bg-repeat-y;
+	}
+
+	.pokemon_img {
+		@apply absolute content-[''] -bottom-16 left-0 right-0 mx-auto bg-[rgba(0,0,0,0.2)] w-4/5 h-10 rounded-[120%] blur-[20px];
+	}
+}
+.character-card {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 0 100%);
+}
+
+.details-card {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 80% 100%, 0 100%);
+}
+
+.slick-prev {
+	left: 10px !important;
+}
+
+.slick-next {
+	right: 10px !important;
+}
+
+.slick-arrow {
+	z-index: 999;
+}
