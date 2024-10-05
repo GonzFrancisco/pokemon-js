@@ -95,7 +95,7 @@ The app is divided into two microfrontends:
 
 The app is configured for deployment on Vercel. You can view the live demo here:
 
-[Live Demo](https://demo-link.com)
+[Live Demo](https://pokedexreact-one.vercel.app/)
 
 To deploy:
 
